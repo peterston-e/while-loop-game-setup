@@ -10,7 +10,7 @@ function playGame() {
   while (gameOn) {
     let guess = prompt(`guess the number between ${minNum} and ${maxNum}`);
 
-    if (guess === answer) {
+    if (guess == answer) {
       console.log(`You got it right! the answer is ${answer}`);
       gameOn = false;
     } else if (guess < answer) {
